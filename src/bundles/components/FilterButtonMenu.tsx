@@ -1,17 +1,6 @@
 import {MouseEvent, ReactElement, useState} from 'react'
 import {Button, Menu, MenuItem, ListItemText} from '@mui/material'
-
-export interface IChildrenItem {
-    label: string
-    onRelease: () => void
-}
-
-
-interface FilterButtonProps {
-    title: string
-    id: string
-    childrenList: IChildrenItem[]
-}
+import {FilterButtonProps, IChildrenItem} from '../interfaces/filterButtonMenu.ts'
 
 
 export default function FilterButtonMenu(props: FilterButtonProps): ReactElement {

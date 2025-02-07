@@ -2,10 +2,8 @@ import {ReactElement, MouseEvent, useState} from 'react'
 
 import {MoreVert} from '@mui/icons-material'
 import {IconButton, Menu, MenuItem} from '@mui/material'
+import {MenuButtonProps} from '../../interfaces/gallery.ts'
 
-interface MenuButtonProps {
-    project_id: string | number
-}
 
 export default function CardMenuButton({project_id}: MenuButtonProps): ReactElement {
     const button_id = `card-button-menu-from-${project_id}`
